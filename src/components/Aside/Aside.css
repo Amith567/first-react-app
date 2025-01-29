@@ -1,0 +1,46 @@
+.container-aside {
+    
+  /* width: 10rem; */
+  background-color: #5b913b;
+  /* height: 100vh; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  gap: 2rem;
+  padding-top: 1rem;
+  }
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 1rem;
+  width: 7rem;
+  height: 2em;
+ padding: 0.5rem;
+ text-transform: uppercase;
+
+  
+}
+.compress-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.cmp-btn {
+  background-color: #77b254;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #fff;
+}
+/* animation */
+.item:hover{
+    background-color: #77b254;
+    border-radius: 20px;
+  
+}
