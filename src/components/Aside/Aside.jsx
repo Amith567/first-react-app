@@ -18,14 +18,14 @@ const Aside = () => {
     setExpanded(prevState=>!prevState);
 };
   return (
-    <div>
+    <div
+    style={{
+      width: isExpanded ? '10rem' : '5rem',
+      height : isExpanded ? '400px' : '200px',
+      transition : 'width 0.3s, height 0.3s',
+    }}>
       <div className="container-aside"
-      style={{
-        width: isExpanded ? '400px' : '200px',  // Toggle between two sizes
-        height: isExpanded ? '400px' : '200px',
-        backgroundColor: 'lightblue',
-        transition: 'width 0.3s, height 0.3s', // Smooth transition for resizing
-      }}>
+        >
         <div className="compress-btn">
           <button className="cmp-btn" onClick={toggleSize}>
             <FaAngleLeft />
@@ -33,38 +33,38 @@ const Aside = () => {
         </div>
         <div className="item">
           <FaHtml5 />
-          html
+          <a href="#">html</a>
         </div>
         <div className="item">
           <IoLogoCss3 />
-          css
+          <a href="#">css</a>
         </div>
         <div className="item">
           <FaJsSquare />
-          js
+          <a href="#">js</a>
         </div>
         <div className="item">
           <FaPython />
-          python
+          <a href="">python</a>
         </div>
         <div className="item">
           <FaReact />
-          react
+          <a href="#">react</a>
         </div>
         <div className="item">
           <DiJqueryLogo />
-          jquery
+          <a href="#">jquery</a>
         </div>
         <div className="item">
           <FaJava />
-          java
+          <a href="#">java</a>
         </div>
         <div className="item">
           <BsRecordCircle />
-          c++
+          <a href="#">c++</a>
         </div>
         <div className="item">
-          <BsRecordCircleFill />c
+          <BsRecordCircleFill /><a href="#">c</a>
         </div>
       </div>
     </div>
