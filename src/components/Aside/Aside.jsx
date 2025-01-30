@@ -20,7 +20,7 @@ const Aside = () => {
   return (
     <div
     style={{
-      width: isExpanded ? '10rem' : '5rem',
+      width: isExpanded ? '10rem' : '6rem',
       height : isExpanded ? '400px' : '200px',
       transition : 'width 0.3s, height 0.3s',
     }}>
