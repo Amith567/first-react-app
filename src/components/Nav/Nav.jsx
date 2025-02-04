@@ -2,7 +2,7 @@ import "./Nav.css";
 const Nav = () => {
   return (
     <>
-      <div className="container">
+      <div className="nav-container">
         <div className="logo">
           <h2>
             <a href="#">react app</a>
